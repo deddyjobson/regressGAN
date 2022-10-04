@@ -1,0 +1,5 @@
+[default]
+project = cgan_regression
+entity = deddy
+disabled = true
+

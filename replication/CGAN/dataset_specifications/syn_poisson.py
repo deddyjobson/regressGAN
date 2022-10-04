@@ -3,7 +3,7 @@ import numpy as np
 import utils
 from dataset_specifications.dataset import Dataset
 
-class ConstNoiseSet(Dataset):
+class SynPoissonSet(Dataset):
     def __init__(self):
         super().__init__()
         self.name = "syn_poisson"

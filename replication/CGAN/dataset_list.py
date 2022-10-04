@@ -3,6 +3,7 @@ from dataset_specifications.double_normal import DoubleNormalSet
 from dataset_specifications.linear import Linear
 from dataset_specifications.sinus import Sinus
 from dataset_specifications.const_noise import ConstNoiseSet
+from dataset_specifications.syn_poisson import SynPoissonSet
 from dataset_specifications.heteroskedastic import HeteroskedasticSet
 from dataset_specifications.bimodal import BimodalSet
 from dataset_specifications.exponential import ExponentialSet
@@ -26,6 +27,7 @@ sets = {
     "linear": Linear,
     "sinus": Sinus,
     "const_noise": ConstNoiseSet,
+    "syn_poisson": SynPoissonSet,
     "heteroskedastic": HeteroskedasticSet,
     "bimodal": BimodalSet,
     "exponential": ExponentialSet,

@@ -1,0 +1,1 @@
+{"generator_loss": 0.2752468079328537, "_runtime": 23.17148733139038, "fooling": 0.4317542850971222, "epoch": 90, "discriminator_loss": -0.1407480299472809, "_timestamp": 1664883114.218104, "_step": 126, "kernel_scale": 0.5000000596046448, "true_log_likelihood": -7.9749531745910645, "true_mae": 2.4892897605895996}

@@ -16,6 +16,7 @@ from dataset_specifications.swirls import SwirlsSet
 from dataset_specifications.power import PowerSet
 from dataset_specifications.butterfly import ButterflySet
 from dataset_specifications.housing import HousingSet
+from dataset_specifications.diabetes import DiabetesSet
 from dataset_specifications.house_age import HouseAgeSet
 from dataset_specifications.trajectories import TRAJECTORIES_SET_DICT
 from dataset_specifications.wmix import WMIX_SET_DICT
@@ -40,6 +41,7 @@ sets = {
     "power": PowerSet,
     "butterfly": ButterflySet,
     "housing": HousingSet,
+    "diabetes": DiabetesSet,
     "house_age": HouseAgeSet,
 }
 

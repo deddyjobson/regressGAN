@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "main.py", line 352, in <module>
+    main()
+  File "main.py", line 297, in main
+    model.train(train_data, config, val_func=val_model)
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/models/cganmse.py", line 156, in train
+    gen_loss = self.gen_loss(data_batch_repeated,new_gen_batch)
+UnboundLocalError: local variable 'data_batch_repeated' referenced before assignment

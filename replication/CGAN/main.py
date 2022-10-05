@@ -9,6 +9,7 @@ import ast
 import constants
 import utils
 import models.cgan_versions as cgans
+import models.cganmse as cganmse
 import models.cgmmn as cgmmn
 import models.gmmn as gmmn
 import models.gp as gp
@@ -22,6 +23,7 @@ import evaluation as ev
 # Available models
 models = {
     "cgan": cgans.build_cgan,
+    "cganmse": cganmse.Cgan,
     "gp": gp.build_gp,
     "nn_reg": nn_reg.NNRegressor,
     "nn_het": nn_het.NNHeteroskedastic,

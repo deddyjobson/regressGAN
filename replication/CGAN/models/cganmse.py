@@ -147,6 +147,7 @@ class Cgan:
                             config["gen_samples"], dim=0)
                 else:
                     x_batch_repeated = x_batch
+                    data_batch_repeated = data_batch
 
                 new_gen_input = torch.cat((x_batch_repeated, new_noise_batch), dim=1)
                 new_gen_batch = self.gen(new_gen_input)
@@ -162,7 +163,7 @@ class Cgan:
 
                 # Store loss
                 batch_fooling = 0 # torch.mean(torch.sigmoid(new_gen_logits))
-                epoch_fooling.append(batch_fooling.item())
+                epoch_fooling.append(-gen_loss.item())
                 epoch_disc_loss.append(gen_loss.item())
                 epoch_gen_loss.append(gen_loss.item())
 
@@ -204,10 +205,10 @@ class Cgan:
     #     return self.rmse_loss(data_logits, torch.ones_like(data_logits)) +\
     #             self.rmse_loss(gen_logits, torch.zeros_like(gen_logits))
 
-    def gen_loss(self, gen_logits):
+    def gen_loss(self, data_batch_repeated, new_gen_batch):
         # logit arguments are direct outputs from discriminator
         # Practical loss, -log(D) trick
-        return self.rmse_loss(gen_logits, torch.ones_like(gen_logits))
+        return self.rmse_loss(data_batch_repeated, new_gen_batch)
 
     @torch.no_grad()
     def get_pdf(self, x, n_samples=100):

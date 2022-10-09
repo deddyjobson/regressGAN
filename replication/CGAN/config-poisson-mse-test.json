@@ -1,7 +1,7 @@
 {
 "train": 1,
-"test": 0,
-"model": "cgan",
+"test": 1,
+"model": "cganmse",
 "dataset": "syn_poisson",
 "cgan_type": "pearson",
 "cgan_nets": "small_ni",

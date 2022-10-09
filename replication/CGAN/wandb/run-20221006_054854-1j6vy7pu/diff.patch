@@ -1,0 +1,67 @@
+diff --git a/replication/CGAN/config-poisson.json b/replication/CGAN/config-poisson.json
+deleted file mode 100644
+index 2ff7953..0000000
+--- a/replication/CGAN/config-poisson.json
++++ /dev/null
+@@ -1,14 +0,0 @@
+-{
+-"train": 1,
+-"test": 0,
+-"model": "cgan",
+-"dataset": "syn_poisson",
+-"cgan_type": "pearson",
+-"cgan_nets": "small_ni",
+-"noise_dim": 5,
+-"batch_size": 100,
+-"lr": 1e-4,
+-"optimizer": "rmsprop",
+-"epochs": 1000,
+-"val_interval": 5
+-}
+\ No newline at end of file
+diff --git a/replication/CGAN/wandb/debug.log b/replication/CGAN/wandb/debug.log
+index 116ab46..c7104a2 100644
+--- a/replication/CGAN/wandb/debug.log
++++ b/replication/CGAN/wandb/debug.log
+@@ -1,13 +1,18 @@
+-2022-10-05 07:47:51,350 DEBUG   MainThread:13614 [wandb_config.py:_load_defaults():107] wandb dir not provided, skipping defaults
+-2022-10-05 07:47:51,367 DEBUG   MainThread:13614 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+-2022-10-05 07:47:51,531 DEBUG   MainThread:13614 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+-2022-10-05 07:47:51,540 DEBUG   MainThread:13614 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+-2022-10-05 07:47:51,777 DEBUG   MainThread:13614 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/deddy/cgan_regression/2cfolzl2/file_stream HTTP/1.1" 200 None
+-2022-10-05 07:47:51,860 DEBUG   MainThread:13614 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/deddy/cgan_regression/2cfolzl2/file_stream HTTP/1.1" 200 None
+-2022-10-05 07:47:51,884 DEBUG   MainThread:13614 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+-2022-10-05 07:47:51,973 DEBUG   MainThread:13614 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+-2022-10-05 07:47:52,012 DEBUG   Thread-4  :13614 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
+-2022-10-05 07:47:52,085 DEBUG   Thread-4  :13614 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+-2022-10-05 07:47:52,089 DEBUG   Thread-4  :13614 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): storage.googleapis.com:443
+-2022-10-05 07:47:52,340 DEBUG   Thread-4  :13614 [connectionpool.py:_make_request():465] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/deddy/cgan_regression/2cfolzl2/___batch_archive_1.tgz?Expires=1665042472&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=Icfk%2BLac4nzAJi5W86B%2FEZ6qovA9KupK%2FwJ17C5GlT3ZeXeLTidNXrHfOZgt2ObXMfgXlusWKoOA5a7TFLiH4sYUnbdhxehSf88PkiEYx%2FugTfJibWR5SL3154vtYWI8fk5kvVCgul8IY7mEYEX%2Bp4D9NccbDDmBX6r5ZsdUZGKjqY9um4ajCcvNrUhIWSNbTnpOMs4ATxfiMNxVh%2Fbb%2BoTrEcSt6QJvfgJ1HCL8FebxncoSCnuS8%2Bwx3EB%2F7WoURfEtmgP62qkxA%2BRIdlKiQuxrGypzbt6ulGtiNZs3p6RihzbsB4NNBYrzgg8pVlFc5AgMlYJXppg%2F1BFkfqYimA%3D%3D HTTP/1.1" 200 0
+-2022-10-05 07:47:53,573 DEBUG   Thread-1  :13614 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /files/deddy/cgan_regression/2cfolzl2/file_stream HTTP/1.1" 200 None
++2022-10-06 05:48:54,557 DEBUG   MainThread:3085 [wandb_config.py:_load_defaults():111] no defaults not found in config-defaults.yaml
++2022-10-06 05:48:54,564 DEBUG   MainThread:3085 [cmd.py:execute():871] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/jupyter/papers/regressGAN, universal_newlines=False, shell=None, istream=<valid stream>)
++2022-10-06 05:48:54,569 DEBUG   MainThread:3085 [cmd.py:execute():871] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/jupyter/papers/regressGAN, universal_newlines=False, shell=None, istream=None)
++2022-10-06 05:48:54,572 DEBUG   MainThread:3085 [cmd.py:execute():871] Popen(['git', 'status', '--porcelain', '--untracked-files'], cwd=/home/jupyter/papers/regressGAN, universal_newlines=False, shell=None, istream=None)
++2022-10-06 05:48:54,620 DEBUG   MainThread:3085 [run_manager.py:__init__():535] Initialized sync for cgan_regression/1j6vy7pu
++2022-10-06 05:48:54,624 INFO    MainThread:3085 [run_manager.py:wrap_existing_process():1133] wrapping existing process 3035
++2022-10-06 05:48:54,624 WARNING MainThread:3085 [io_wrap.py:register():104] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
++2022-10-06 05:48:54,626 DEBUG   MainThread:3085 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): pypi.org:443
++2022-10-06 05:48:54,663 DEBUG   MainThread:3085 [connectionpool.py:_make_request():465] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 68569
++2022-10-06 05:48:54,678 INFO    MainThread:3085 [run_manager.py:init_run():918] system metrics and metadata threads started
++2022-10-06 05:48:54,678 INFO    MainThread:3085 [run_manager.py:init_run():952] upserting run before process can begin, waiting at most 10 seconds
++2022-10-06 05:48:54,684 DEBUG   Thread-14 :3085 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): api.wandb.ai:443
++2022-10-06 05:48:54,834 DEBUG   Thread-14 :3085 [connectionpool.py:_make_request():465] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
++2022-10-06 05:48:54,839 INFO    Thread-14 :3085 [run_manager.py:_upsert_run():1037] saving patches
++2022-10-06 05:48:54,840 DEBUG   Thread-14 :3085 [cmd.py:execute():871] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/jupyter/papers/regressGAN, universal_newlines=False, shell=None, istream=None)
++2022-10-06 05:48:54,844 DEBUG   Thread-14 :3085 [cmd.py:execute():871] Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/jupyter/papers/regressGAN, universal_newlines=False, shell=None, istream=None)
++2022-10-06 05:48:54,849 DEBUG   Thread-14 :3085 [cmd.py:execute():871] Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/jupyter/papers/regressGAN, universal_newlines=False, shell=None, istream=None)
++2022-10-06 05:48:54,854 DEBUG   Thread-14 :3085 [cmd.py:execute():871] Popen(['git', 'version'], cwd=/home/jupyter/papers/regressGAN, universal_newlines=False, shell=None, istream=None)
+diff --git a/replication/CGAN/wandb/settings b/replication/CGAN/wandb/settings
+index 16af21b..ea472eb 100644
+--- a/replication/CGAN/wandb/settings
++++ b/replication/CGAN/wandb/settings
+@@ -1,5 +1,4 @@
+ [default]
+ project = cgan_regression
+ entity = deddy
+-disabled = true
+ 

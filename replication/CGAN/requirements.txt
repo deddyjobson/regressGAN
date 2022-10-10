@@ -8,3 +8,4 @@ scikit-learn==0.22.1
 h5py==2.10.0
 pandas==1.0.1
 xlrd==1.2.0
+tweedie==0.0.9

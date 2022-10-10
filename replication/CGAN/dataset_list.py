@@ -4,6 +4,7 @@ from dataset_specifications.linear import Linear
 from dataset_specifications.sinus import Sinus
 from dataset_specifications.const_noise import ConstNoiseSet
 from dataset_specifications.syn_poisson import SynPoissonSet
+from dataset_specifications.syn_tweedie import SynTweedieSet
 from dataset_specifications.syn_normal import SynNormalSet
 from dataset_specifications.syn_logistic import SynLogisticSet
 from dataset_specifications.heteroskedastic import HeteroskedasticSet
@@ -31,6 +32,7 @@ sets = {
     "sinus": Sinus,
     "const_noise": ConstNoiseSet,
     "syn_poisson": SynPoissonSet,
+    "syn_tweedie": SynTweedieSet,
     "syn_normal": SynNormalSet,
     "syn_logistic": SynLogisticSet,
     "heteroskedastic": HeteroskedasticSet,

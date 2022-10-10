@@ -11,9 +11,9 @@ LabelledData = collections.namedtuple("LabelledData",
 class Dataset():
     def __init__(self):
         self.n_samples = {
-            "train": 100000,
-            "val": 100000,
-            "test": 100000,
+            "train": 10000,
+            "val": 10000,
+            "test": 10000,
         }
         self.name = "dataset_name"
         self.synthetic = True # If dataset is synthetic

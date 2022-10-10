@@ -19,7 +19,7 @@ class SynTweedieSet(Dataset):
         noise = np.random.normal(loc=0., scale=self.std_dev, size=n)
         mus = np.exp(xs + noise)
 
-        ys = tweedie.tweedie(mu=mus, p=3, phi=20).rvs()
+        ys = tweedie.tweedie(mu=mus, p=1.5, phi=5).rvs()
 
         return np.stack((xs, ys), axis=1)
 

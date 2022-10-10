@@ -11,7 +11,7 @@ class SynNormalSet(Dataset):
         self.std_dev = np.sqrt(0.5)
 
     def get_support(self, x):
-        return (0, x+2*self.std_dev)
+        return (x-2*self.std_dev, x+2*self.std_dev)
 
     def sample(self, n):
         xs = np.random.uniform(low=-1., high=1., size=n)
@@ -20,6 +20,6 @@ class SynNormalSet(Dataset):
 
         return np.stack((xs, ys), axis=1)
 
-    def get_pdf(self, x): # not true, but won't use this code (too much) anyway
+    def get_pdf(self, x): # won't use this code (too much) anyway
         return utils.get_gaussian_pdf(x, self.std_dev)
 

@@ -3,3 +3,5 @@ venv/
 *.pyc
 
 *.DS_Store
+replication/CGAN/datasets/real_insurance/*.csv
+.ipynb_checkpoints/.gitignore-checkpoint

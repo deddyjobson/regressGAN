@@ -10,5 +10,5 @@
 "lr": 1e-4,
 "optimizer": "adam",
 "epochs": 1000,
-"val_interval": 5
+"val_interval": 20
 }

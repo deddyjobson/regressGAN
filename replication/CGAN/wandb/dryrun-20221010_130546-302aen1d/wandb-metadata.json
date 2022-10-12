@@ -1,0 +1,30 @@
+{
+    "root": "/home/jupyter/papers/regressGAN",
+    "program": "main.py",
+    "git": {
+        "remote": "https://github.com/deddyjobson/regressGAN.git",
+        "commit": "6569e69c602096ebbb2f556e72977d0028ec7ca6"
+    },
+    "email": "deddy@mercari.com",
+    "startedAt": "2022-10-10T13:05:46.303941",
+    "host": "gpu-enabled",
+    "username": "jupyter",
+    "executable": "/home/jupyter/papers/regressGAN/replication/CGAN/venv/bin/python",
+    "os": "Linux-4.19.0-21-cloud-amd64-x86_64-with-debian-10.13",
+    "python": "3.7.12",
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": "11.0.228",
+    "args": [
+        "--config",
+        "config_files_active/poisson-gp.json"
+    ],
+    "state": "finished",
+    "jobType": null,
+    "mode": "dryrun",
+    "name": "gp-syn_poisson-13-05",
+    "project": "cgan_regression",
+    "heartbeatAt": "2022-10-10T13:39:22.701613",
+    "exitcode": 0
+}

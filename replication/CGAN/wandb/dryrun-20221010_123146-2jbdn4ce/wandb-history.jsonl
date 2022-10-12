@@ -1,0 +1,13 @@
+{"true_log_likelihood": -2.813670143287856, "true_mae": 2.097369128597396, "_runtime": 301.285395860672, "_timestamp": 1665405406.517422, "_step": 0}
+{"kernel_scale": 0.5000000596046448, "_runtime": 457.50057077407837, "_timestamp": 1665405562.7325969, "_step": 1}
+{"kernel_scale": 0.5000000596046448, "_runtime": 616.789653301239, "_timestamp": 1665405722.0216794, "_step": 2}
+{"kernel_scale": 0.5000000596046448, "_runtime": 764.8228976726532, "_timestamp": 1665405870.0549238, "_step": 3}
+{"kernel_scale": 0.5000000596046448, "_runtime": 912.2793369293213, "_timestamp": 1665406017.511363, "_step": 4}
+{"kernel_scale": 0.5000000596046448, "_runtime": 1060.167464017868, "_timestamp": 1665406165.39949, "_step": 5}
+{"kernel_scale": 0.5000000596046448, "_runtime": 1207.7047247886658, "_timestamp": 1665406312.936751, "_step": 6}
+{"kernel_scale": 0.5000000596046448, "_runtime": 1355.0158033370972, "_timestamp": 1665406460.2478294, "_step": 7}
+{"kernel_scale": 0.5000000596046448, "_runtime": 1538.047105550766, "_timestamp": 1665406643.2791317, "_step": 8}
+{"kernel_scale": 0.5000000596046448, "_runtime": 1687.7469019889832, "_timestamp": 1665406792.978928, "_step": 9}
+{"kernel_scale": 0.5000000596046448, "_runtime": 1837.706759929657, "_timestamp": 1665406942.938786, "_step": 10}
+{"kernel_scale": 0.5000000596046448, "_runtime": 1986.921334028244, "_timestamp": 1665407092.1533601, "_step": 11}
+{"test_log_likelihood_mean": -4.862587738037109, "test_log_likelihood_std_dev": 0.03686070754073803, "test_log_likelihood_true": -2.6900048864742856, "test_mae_mean": 2.004432129859924, "test_mae_std_dev": 0.003606447869626544, "test_mae_true": 2.0079439942593242, "_runtime": 1986.9884729385376, "_timestamp": 1665407092.220499, "_step": 12}

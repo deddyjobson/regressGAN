@@ -16,10 +16,10 @@ class SynTweedieSet(Dataset):
 
     def sample(self, n):
         xs = np.random.uniform(low=-1., high=1., size=n)
-        noise = np.random.normal(loc=0., scale=self.std_dev, size=n)
-        mus = np.exp(xs + noise)
+        # noise = np.random.normal(loc=0., scale=self.std_dev, size=n)
+        mus = np.exp(xs) # + noise)
 
-        ys = tweedie.tweedie(mu=mus, p=1.5, phi=5).rvs()
+        ys = tweedie.tweedie(mu=mus, p=1.5, phi=1).rvs()
 
         return np.stack((xs, ys), axis=1)
 

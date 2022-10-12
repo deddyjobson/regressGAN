@@ -14,9 +14,9 @@ class SynPoissonSet(Dataset):
         return (x-2*self.std_dev, x+2*self.std_dev)
 
     def sample(self, n):
-        xs = np.random.uniform(low=-1., high=1., size=n)
-        noise = np.random.normal(loc=0., scale=self.std_dev, size=n)
-        mus = np.exp(xs + noise)
+        xs = np.random.uniform(low=0, high=2, size=n)
+        # noise = np.random.normal(loc=0., scale=self.std_dev, size=n)
+        mus = np.exp(xs) # + noise)
 
         ys = np.random.poisson(mus)
 

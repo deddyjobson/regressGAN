@@ -4,7 +4,7 @@
 "model": "cganmse",
 "dataset": "real_health_insurance",
 "cgan_type": "pearson",
-"cgan_nets": "small_ni",
+"cgan_nets": "medium_ni",
 "noise_dim": 1,
 "batch_size": 100,
 "lr": 1e-4,

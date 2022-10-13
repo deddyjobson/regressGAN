@@ -6,3 +6,4 @@ venv/
 replication/CGAN/datasets/real_insurance/*.csv
 .ipynb_checkpoints/.gitignore-checkpoint
 replication/CGAN/datasets/housing/*.csv
+replication/CGAN/datasets/house_age/*.csv

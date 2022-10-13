@@ -1,0 +1,67 @@
+Epoch 19, true	ll: -1.2915	mae: 0.6802
+Epoch 39, true	ll: -1.2652	mae: 0.66648
+Epoch 59, true	ll: -1.245	mae: 0.65853
+Epoch 79, true	ll: -1.2252	mae: 0.63754
+Epoch 99, true	ll: -1.2178	mae: 0.63308
+Epoch 119, true	ll: -1.2148	mae: 0.63022
+Epoch 139, true	ll: -1.2133	mae: 0.63561
+Epoch 159, true	ll: -1.2101	mae: 0.63197
+Epoch 179, true	ll: -1.2054	mae: 0.62805
+Epoch 199, true	ll: -1.2053	mae: 0.62338
+Epoch 219, true	ll: -1.2044	mae: 0.63116
+Epoch 239, true	ll: -1.1909	mae: 0.61639
+Epoch 259, true	ll: -1.1952	mae: 0.62033
+Epoch 279, true	ll: -1.1826	mae: 0.61077
+Epoch 299, true	ll: -1.1764	mae: 0.60423
+Epoch 319, true	ll: -1.1702	mae: 0.60751
+Epoch 339, true	ll: -1.1854	mae: 0.60818
+Epoch 359, true	ll: -1.1661	mae: 0.59987
+Epoch 379, true	ll: -1.1589	mae: 0.60502
+Epoch 399, true	ll: -1.1593	mae: 0.60311
+Epoch 419, true	ll: -1.1588	mae: 0.6041
+Epoch 439, true	ll: -1.1554	mae: 0.59567
+Epoch 459, true	ll: -1.1544	mae: 0.59491
+Epoch 479, true	ll: -1.148	mae: 0.58693
+Epoch 499, true	ll: -1.1496	mae: 0.59655
+Epoch 519, true	ll: -1.1455	mae: 0.59231
+Epoch 539, true	ll: -1.1507	mae: 0.58997
+Epoch 559, true	ll: -1.1476	mae: 0.58062
+Epoch 579, true	ll: -1.1351	mae: 0.58178
+Epoch 599, true	ll: -1.1286	mae: 0.58094
+Epoch 619, true	ll: -1.1358	mae: 0.58141
+Epoch 639, true	ll: -1.1388	mae: 0.59112
+Epoch 659, true	ll: -1.1271	mae: 0.58202
+Epoch 679, true	ll: -1.1329	mae: 0.5817
+Epoch 699, true	ll: -1.1278	mae: 0.57157
+Epoch 719, true	ll: -1.1254	mae: 0.57802
+Epoch 739, true	ll: -1.1289	mae: 0.57976
+Epoch 759, true	ll: -1.1242	mae: 0.57073
+Epoch 779, true	ll: -1.1238	mae: 0.57287
+Epoch 799, true	ll: -1.1247	mae: 0.57292
+Epoch 819, true	ll: -1.1511	mae: 0.58639
+Epoch 839, true	ll: -1.1171	mae: 0.56816
+Epoch 859, true	ll: -1.1207	mae: 0.57454
+Epoch 879, true	ll: -1.1323	mae: 0.57549
+Epoch 899, true	ll: -1.1137	mae: 0.56794
+Epoch 919, true	ll: -1.1282	mae: 0.58191
+Epoch 939, true	ll: -1.1134	mae: 0.56567
+Epoch 959, true	ll: -1.1081	mae: 0.56874
+Epoch 979, true	ll: -1.112	mae: 0.56516
+Epoch 999, true	ll: -1.1118	mae: 0.57267
+Kernel Scale: 0.5000000596046448
+Test, true	ll: -1.0959	mae: 0.55596
+Test, kde	ll: -1.0956	mae: 0.55568
+Test, kde	ll: -1.0959	mae: 0.55574
+Test, kde	ll: -1.0954	mae: 0.55591
+Test, kde	ll: -1.0959	mae: 0.55586
+Test, kde	ll: -1.0956	mae: 0.55577
+Test, kde	ll: -1.0957	mae: 0.55581
+Test, kde	ll: -1.0959	mae: 0.55589
+Test, kde	ll: -1.0956	mae: 0.5559
+Test, kde	ll: -1.096	mae: 0.55594
+Test, kde	ll: -1.0958	mae: 0.55578
+Test metrics over 10 seeds
+ll: -1.0957±0.00016309
+true ll: -1.0959
+mae: 0.55583±7.8953e-05
+true mae: 0.55596

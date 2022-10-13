@@ -25,6 +25,7 @@ from dataset_specifications.trajectories import TRAJECTORIES_SET_DICT
 from dataset_specifications.wmix import WMIX_SET_DICT
 
 from dataset_specifications.real_insurance import RealInsuranceSet
+from dataset_specifications.real_health_insurance import RealHealthInsuranceSet
 
 # List of all available datasets
 sets = {
@@ -53,6 +54,7 @@ sets = {
     "house_age": HouseAgeSet,
 
     "real_insurance": RealInsuranceSet,
+    "real_health_insurance": RealHealthInsuranceSet,
 }
 
 # There exists multiple trajectories and wmix datasets,

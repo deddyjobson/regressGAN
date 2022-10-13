@@ -10,8 +10,11 @@
 2022-10-13 09:40:20,396 INFO    MainThread:15322 [run_manager.py:init_run():918] system metrics and metadata threads started
 2022-10-13 09:40:20,396 INFO    MainThread:15322 [run_manager.py:wrap_existing_process():1150] informing user process we are ready to proceed
 2022-10-13 09:40:20,396 INFO    MainThread:15322 [run_manager.py:_sync_etc():1257] entering loop for messages from user process
-2022-10-13 09:40:21,318 INFO    Thread-3  :15322 [run_manager.py:_on_file_modified():682] file/dir modified: /home/jupyter/papers/regressGAN/replication/CGAN/wandb/dryrun-20221013_094019-1ilkb5s2022-10-13 10:12:43,754 INFO    MainThread:6243 [run_manager.py:_sync_etc():1280] received message from user process: {"exitcode": 0}
-2022-10-13 10:12:43,755 INFO    MainThread:6243 [run_manager.py:_sync_etc():1366] closing log streams and sending exitcode to W&B
-2022-10-13 10:12:43,755 INFO    MainThread:6243 [run_manager.py:shutdown():1057] shutting down system stats and metadata service
-,755 INFO    MainThread:6243 [1bnnqbil:run_manager.py:_sync_etc():1366] closing log streams and sending exitcode to W&B
+2022-10-13 09:40:21,318 INFO    Thread-3  :15322 [run_manager.py:_on_file_modified():682] file/dir modified: /home/jupyter/papers/regressGAN/replication/CGAN/wandb/dryrun-20221013_094019-1ilkb5s2022-10-13 10:2022-10-13 11:52:34,753 INFO    MainThread:15322 [run_manager.py:_sync_etc():1313] process received interrupt signal, shutting down
+2022-10-13 11:52:34,754 INFO    MainThread:15322 [run_manager.py:_sync_etc():1366] closing log streams and sending exitcode to W&B
+2022-10-13 11:52:34,754 INFO    MainThread:15322 [run_manager.py:shutdown():1057] shutting down system stats and metadata service
+ainThread:6243 [1bnnqbil:run_manager.py:_sync_etc():1366] closing log streams and sending exitcode to W&B
 2022-10-13 10:12:43,755 INFO    MainThread:6243 [1bnnqbil:run_manager.py:shutdown():1057] shutting down system stats and metadata service
+2022-10-13 11:52:34,753 INFO    MainThread:15322 [1ilkb5sr:run_manager.py:_sync_etc():1313] process received interrupt signal, shutting down
+2022-10-13 11:52:34,754 INFO    MainThread:15322 [1ilkb5sr:run_manager.py:_sync_etc():1366] closing log streams and sending exitcode to W&B
+2022-10-13 11:52:34,754 INFO    MainThread:15322 [1ilkb5sr:run_manager.py:shutdown():1057] shutting down system stats and metadata service

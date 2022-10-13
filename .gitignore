@@ -7,3 +7,8 @@ replication/CGAN/datasets/real_insurance/*.csv
 .ipynb_checkpoints/.gitignore-checkpoint
 replication/CGAN/datasets/housing/*.csv
 replication/CGAN/datasets/house_age/*.csv
+data/Year 2009-2010.csv
+data/Year 2010-2011.csv
+data/retail_dataset.csv
+.ipynb_checkpoints/
+replication/CGAN/datasets/real_retail/*.csv

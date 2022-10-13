@@ -26,6 +26,7 @@ from dataset_specifications.wmix import WMIX_SET_DICT
 
 from dataset_specifications.real_insurance import RealInsuranceSet
 from dataset_specifications.real_health_insurance import RealHealthInsuranceSet
+from dataset_specifications.real_retail import RealRetailSet
 
 # List of all available datasets
 sets = {
@@ -55,6 +56,7 @@ sets = {
 
     "real_insurance": RealInsuranceSet,
     "real_health_insurance": RealHealthInsuranceSet,
+    "real_retail": RealRetailSet,
 }
 
 # There exists multiple trajectories and wmix datasets,

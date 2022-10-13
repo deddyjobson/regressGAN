@@ -1,20 +1,18 @@
-2022-10-13 09:40:20,313 DEBUG   MainThread:15322 [wandb_config.py:_load_defaults():111] no defaults not found in config-defaults.yaml
-2022-10-13 09:40:20,320 DEBUG   MainThread:15322 [cmd.py:execute():871] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/jupyter/papers/regressGAN, universal_newlines=False, shell=None, istream=<valid stream>)
-2022-10-13 09:40:20,325 DEBUG   MainThread:15322 [cmd.py:execute():871] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/jupyter/papers/regressGAN, universal_newlines=False, shell=None, istream=None)
-2022-10-13 09:40:20,329 DEBUG   MainThread:15322 [cmd.py:execute():871] Popen(['git', 'status', '--porcelain', '--untracked-files'], cwd=/home/jupyter/papers/regressGAN, universal_newlines=False, shell=None, istream=None)
-2022-10-13 09:40:20,342 DEBUG   MainThread:15322 [run_manager.py:__init__():535] Initialized sync for cgan_regression/1ilkb5sr
-2022-10-13 09:40:20,343 INFO    MainThread:15322 [run_manager.py:wrap_existing_process():1133] wrapping existing process 15237
-2022-10-13 09:40:20,343 WARNING MainThread:15322 [io_wrap.py:register():104] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
-2022-10-13 09:40:20,346 DEBUG   MainThread:15322 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): pypi.org:443
-2022-10-13 09:40:20,382 DEBUG   MainThread:15322 [connectionpool.py:_make_request():465] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 68569
-2022-10-13 09:40:20,396 INFO    MainThread:15322 [run_manager.py:init_run():918] system metrics and metadata threads started
-2022-10-13 09:40:20,396 INFO    MainThread:15322 [run_manager.py:wrap_existing_process():1150] informing user process we are ready to proceed
-2022-10-13 09:40:20,396 INFO    MainThread:15322 [run_manager.py:_sync_etc():1257] entering loop for messages from user process
-2022-10-13 09:40:21,318 INFO    Thread-3  :15322 [run_manager.py:_on_file_modified():682] file/dir modified: /home/jupyter/papers/regressGAN/replication/CGAN/wandb/dryrun-20221013_094019-1ilkb5s2022-10-13 10:2022-10-13 11:52:34,753 INFO    MainThread:15322 [run_manager.py:_sync_etc():1313] process received interrupt signal, shutting down
-2022-10-13 11:52:34,754 INFO    MainThread:15322 [run_manager.py:_sync_etc():1366] closing log streams and sending exitcode to W&B
-2022-10-13 11:52:34,754 INFO    MainThread:15322 [run_manager.py:shutdown():1057] shutting down system stats and metadata service
-ainThread:6243 [1bnnqbil:run_manager.py:_sync_etc():1366] closing log streams and sending exitcode to W&B
-2022-10-13 10:12:43,755 INFO    MainThread:6243 [1bnnqbil:run_manager.py:shutdown():1057] shutting down system stats and metadata service
-2022-10-13 11:52:34,753 INFO    MainThread:15322 [1ilkb5sr:run_manager.py:_sync_etc():1313] process received interrupt signal, shutting down
-2022-10-13 11:52:34,754 INFO    MainThread:15322 [1ilkb5sr:run_manager.py:_sync_etc():1366] closing log streams and sending exitcode to W&B
-2022-10-13 11:52:34,754 INFO    MainThread:15322 [1ilkb5sr:run_manager.py:shutdown():1057] shutting down system stats and metadata service
+2022-10-13 12:50:10,810 DEBUG   MainThread:9310 [wandb_config.py:_load_defaults():111] no defaults not found in config-defaults.yaml
+2022-10-13 12:50:10,818 DEBUG   MainThread:9310 [cmd.py:execute():871] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/jupyter/papers/regressGAN, universal_newlines=False, shell=None, istream=<valid stream>)
+2022-10-13 12:50:10,824 DEBUG   MainThread:9310 [cmd.py:execute():871] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/jupyter/papers/regressGAN, universal_newlines=False, shell=None, istream=None)
+2022-10-13 12:50:10,828 DEBUG   MainThread:9310 [cmd.py:execute():871] Popen(['git', 'status', '--porcelain', '--untracked-files'], cwd=/home/jupyter/papers/regressGAN, universal_newlines=False, shell=None, istream=None)
+2022-10-13 12:50:10,842 DEBUG   MainThread:9310 [run_manager.py:__init__():535] Initialized sync for cgan_regression/2yr9opko
+2022-10-13 12:50:10,844 INFO    MainThread:9310 [run_manager.py:wrap_existing_process():1133] wrapping existing process 9261
+2022-10-13 12:50:10,844 WARNING MainThread:9310 [io_wrap.py:register():104] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
+2022-10-13 12:50:10,847 DEBUG   MainThread:9310 [connectionpool.py:_new_conn():1007] Starting new HTTPS connection (1): pypi.org:443
+2022-10-13 12:50:10,885 DEBUG   MainThread:9310 [connectionpool.py:_make_request():465] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 68569
+2022-10-13 12:50:10,900 INFO    MainThread:9310 [run_manager.py:init_run():918] system metrics and metadata threads started
+2022-10-13 12:50:10,900 INFO    MainThread:9310 [run_manager.py:wrap_existing_process():1150] informing user process we are ready to proceed
+2022-10-13 12:50:10,901 INFO    MainThread:9310 [run_manager.py:_sync_etc():1257] entering loop for messages from user process
+2022-10-13 12:50:11,815 INFO    Thread-3  :9310 [run_manager.py:_on_file_modified():682] file/dir modified: /home/jupyter/papers/regressGAN/replication/CGAN/wandb/dryrun-20221013_125010-2yr9opko/config.yaml
+2022-10-13 12:57:49,377 INFO    MainThread:9310 [run_manager.py:_sync_etc():1280] received message from user process: {"exitcode": 0}
+2022-10-13 12:57:49,377 INFO    MainThread:9310 [run_manager.py:_sync_etc():1366] closing log streams and sending exitcode to W&B
+2022-10-13 12:57:49,378 INFO    MainThread:9310 [run_manager.py:shutdown():1057] shutting down system stats and metadata service
+inThread:9310 [2yr9opko:run_manager.py:_sync_etc():1366] closing log streams and sending exitcode to W&B
+2022-10-13 12:57:49,378 INFO    MainThread:9310 [2yr9opko:run_manager.py:shutdown():1057] shutting down system stats and metadata service

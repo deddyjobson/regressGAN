@@ -1,0 +1,30 @@
+{
+    "root": "/home/jupyter/papers/regressGAN",
+    "program": "main.py",
+    "git": {
+        "remote": "https://github.com/deddyjobson/regressGAN.git",
+        "commit": "ddee6cc56eb97291430f86c17cb7f47c1374e240"
+    },
+    "email": "deddy@mercari.com",
+    "startedAt": "2022-10-13T05:00:42.441574",
+    "host": "gpu-enabled",
+    "username": "jupyter",
+    "executable": "/home/jupyter/papers/regressGAN/replication/CGAN/venv/bin/python",
+    "os": "Linux-4.19.0-22-cloud-amd64-x86_64-with-debian-10.13",
+    "python": "3.7.12",
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": "11.0.228",
+    "args": [
+        "--config",
+        "config_files_active/housing-mse.json"
+    ],
+    "state": "finished",
+    "jobType": null,
+    "mode": "dryrun",
+    "name": "cganmse-housing-05-00",
+    "project": "cgan_regression",
+    "heartbeatAt": "2022-10-13T05:16:56.928551",
+    "exitcode": 0
+}

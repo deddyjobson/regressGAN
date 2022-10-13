@@ -1,0 +1,18 @@
+Epoch 1, true	ll: -0.65181	mae: 0.32189
+Kernel Scale: 0.07460272312164307
+Test, true	ll: -0.65347	mae: 0.33068
+Test, kde	ll: -0.69202	mae: 0.33413
+Test, kde	ll: -0.69673	mae: 0.33281
+Test, kde	ll: -0.69299	mae: 0.33273
+Test, kde	ll: -0.70195	mae: 0.33342
+Test, kde	ll: -0.68907	mae: 0.33268
+Test, kde	ll: -0.69955	mae: 0.33282
+Test, kde	ll: -0.69526	mae: 0.33255
+Test, kde	ll: -0.69148	mae: 0.33247
+Test, kde	ll: -0.70015	mae: 0.33276
+Test, kde	ll: -0.6928	mae: 0.33309
+Test metrics over 10 seeds
+ll: -0.6952±0.0040429
+true ll: -0.65347
+mae: 0.33294±0.00047086
+true mae: 0.33068

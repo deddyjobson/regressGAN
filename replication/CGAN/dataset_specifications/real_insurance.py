@@ -12,11 +12,11 @@ class RealInsuranceSet(RealDataset):
         self.name = "real_insurance"
         self.requires_path = False
 
-        self.x_dim = 8
+        self.x_dim = 48
         self.support = (0.,1.)
 
-        self.val_percent = 0.10
-        self.test_percent = 0.10
+        self.val_percent = 0.20
+        self.test_percent = 0.20
 
         # California housing dataset
         # Full dataset is available at http://lib.stat.cmu.edu/datasets/houses.zip
@@ -26,9 +26,14 @@ class RealInsuranceSet(RealDataset):
     def preprocess(self, file_path): 
         df = fetch_openml(data_id=41214, as_frame=True)["data"].dropna()
         
+        df[df.select_dtypes(['float64']).columns] = (df[df.select_dtypes(['float64']).columns] - df[df.select_dtypes(['float64']).columns].mean()) / df[df.select_dtypes(['float64']).columns].std()
+        
+        df = df.sample(n=50000, random_state=43)
+
+        
         for feat in df.select_dtypes(['category']).columns:
             df[feat] = df[feat].values.codes
-        
+                
         for feat in df.columns:
             num_new_feats = len(df[feat].unique())
             if df[feat].dtype != "float64":
@@ -38,14 +43,15 @@ class RealInsuranceSet(RealDataset):
                     df[f"{feat}_{idx}"] = df[f"{feat}_{idx}"].astype("float")
                 del df[feat]
 
-        print(df.dtypes)
+                
         x = df.drop(columns="ClaimNb").values
         y = df["ClaimNb"].values
+        print(x.shape, y.shape)
         
         loaded_data = np.concatenate((x, np.expand_dims(y, axis=1)), axis=1)
 
         # Standardize all data
-        loaded_data = skpp.StandardScaler().fit(loaded_data).transform(loaded_data)
+        # loaded_data = skpp.StandardScaler().fit(loaded_data).transform(loaded_data)
 
         return loaded_data
 

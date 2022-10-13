@@ -261,6 +261,7 @@ def main():
 
     # Read data
     dataset = dataset_list.get_dataset_spec(config["dataset"])()
+    
     train_data, val_data, test_data = dataset.load(device)
     config["x_dim"] = dataset.x_dim
     config["y_dim"] = dataset.y_dim

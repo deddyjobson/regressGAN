@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "main.py", line 353, in <module>
+    main()
+  File "main.py", line 298, in main
+    model.train(train_data, config, val_func=val_model)
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/models/gp.py", line 40, in train
+    self.gp.fit(train_set.x, train_set.y)
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/venv/lib/python3.7/site-packages/sklearn/gaussian_process/_gpr.py", line 231, in fit
+    self.kernel_.bounds))]
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/venv/lib/python3.7/site-packages/sklearn/gaussian_process/_gpr.py", line 493, in _constrained_optimization
+    bounds=bounds)
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/venv/lib/python3.7/site-packages/scipy/optimize/_minimize.py", line 624, in minimize
+    callback=callback, **options)
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/venv/lib/python3.7/site-packages/scipy/optimize/lbfgsb.py", line 308, in _minimize_lbfgsb
+    finite_diff_rel_step=finite_diff_rel_step)
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/venv/lib/python3.7/site-packages/scipy/optimize/optimize.py", line 262, in _prepare_scalar_function
+    finite_diff_rel_step, bounds, epsilon=epsilon)
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/venv/lib/python3.7/site-packages/scipy/optimize/_differentiable_functions.py", line 140, in __init__
+    self._update_fun()
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/venv/lib/python3.7/site-packages/scipy/optimize/_differentiable_functions.py", line 233, in _update_fun
+    self._update_fun_impl()
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/venv/lib/python3.7/site-packages/scipy/optimize/_differentiable_functions.py", line 137, in update_fun
+    self.f = fun_wrapped(self.x)
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/venv/lib/python3.7/site-packages/scipy/optimize/_differentiable_functions.py", line 134, in fun_wrapped
+    return fun(np.copy(x), *args)
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/venv/lib/python3.7/site-packages/scipy/optimize/optimize.py", line 74, in __call__
+    self._compute_if_needed(x, *args)
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/venv/lib/python3.7/site-packages/scipy/optimize/optimize.py", line 68, in _compute_if_needed
+    fg = self.fun(x, *args)
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/venv/lib/python3.7/site-packages/sklearn/gaussian_process/_gpr.py", line 222, in obj_func
+    theta, eval_gradient=True, clone_kernel=False)
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/venv/lib/python3.7/site-packages/sklearn/gaussian_process/_gpr.py", line 450, in log_marginal_likelihood
+    K, K_gradient = kernel(self.X_train_, eval_gradient=True)
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/venv/lib/python3.7/site-packages/sklearn/gaussian_process/kernels.py", line 735, in __call__
+    K1, K1_gradient = self.k1(X, Y, eval_gradient=True)
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/venv/lib/python3.7/site-packages/sklearn/gaussian_process/kernels.py", line 1290, in __call__
+    K = squareform(K)
+  File "/home/jupyter/papers/regressGAN/replication/CGAN/venv/lib/python3.7/site-packages/scipy/spatial/distance.py", line 2347, in squareform
+    M = np.zeros((d, d), dtype=X.dtype)
+MemoryError: Unable to allocate 6.71 GiB for an array with shape (30000, 30000) and data type float64

@@ -1,0 +1,30 @@
+{
+    "root": "/home/jupyter/papers/regressGAN",
+    "program": "main.py",
+    "git": {
+        "remote": "https://github.com/deddyjobson/regressGAN.git",
+        "commit": "4bf83d1c4d8e48480b7ddb30d5ca87b6f147420d"
+    },
+    "email": "deddy@mercari.com",
+    "startedAt": "2022-10-12T14:54:49.170544",
+    "host": "gpu-enabled",
+    "username": "jupyter",
+    "executable": "/home/jupyter/papers/regressGAN/replication/CGAN/venv/bin/python",
+    "os": "Linux-4.19.0-21-cloud-amd64-x86_64-with-debian-10.13",
+    "python": "3.7.12",
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": "11.0.228",
+    "args": [
+        "--config",
+        "config_files_active/insurance-mse.json"
+    ],
+    "state": "killed",
+    "jobType": null,
+    "mode": "dryrun",
+    "name": "cganmse-real_insurance-14-54",
+    "project": "cgan_regression",
+    "heartbeatAt": "2022-10-12T14:59:27.936885",
+    "exitcode": 255
+}

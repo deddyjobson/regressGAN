@@ -1,5 +1,0 @@
-{
-    "type": "noise_injection",
-    "activation": "relu",
-    "hidden_layers": [128, 128, 64, 64, 64, 64, 64, 64]
-}

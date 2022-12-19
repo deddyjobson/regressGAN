@@ -1,6 +1,0 @@
-{
-"train": 1,
-"test": 1,
-"model": "gp",
-"dataset": "real_insurance"
-}

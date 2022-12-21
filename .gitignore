@@ -12,3 +12,5 @@ data/Year 2010-2011.csv
 data/retail_dataset.csv
 .ipynb_checkpoints/
 replication/CGAN/datasets/real_retail/*.csv
+datasets/
+temp/
